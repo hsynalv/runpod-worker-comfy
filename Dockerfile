@@ -54,7 +54,7 @@ WORKDIR /comfyui
 # Download checkpoints/vae/LoRA to include in image based on model type
 
 RUN wget --header="Authorization: Bearer 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" -O models/diffusion_models/sd3.5_large.safetensors https://huggingface.co/stabilityai/stable-diffusion-3.5-large/resolve/main/sd3.5_large.safetensors
-RUN wget --header="Authorization: Bearer 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}" -O models/vae/sdvae.safetensors https://huggingface.co/stabilityai/stable-diffusion-3.5-large/resolve/main/vae/diffusion_pytorch_model.safetensors
+RUN wget --header="Authorization: Bearer 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" -O models/vae/sdvae.safetensors https://huggingface.co/stabilityai/stable-diffusion-3.5-large/resolve/main/vae/diffusion_pytorch_model.safetensors
 RUN wget --header="Authorization: Bearer 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" -O models/controlnet/sd3.5_large_controlnet_blur.safetensors https://huggingface.co/stabilityai/stable-diffusion-3.5-controlnets/resolve/main/sd3.5_large_controlnet_blur.safetensors
 RUN wget --header="Authorization: Bearer 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" -O models/controlnet/sd3.5_large_controlnet_canny.safetensors https://huggingface.co/stabilityai/stable-diffusion-3.5-controlnets/resolve/main/sd3.5_large_controlnet_canny.safetensors
 RUN wget --header="Authorization: Bearer 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" -O models/controlnet/sd3.5_large_controlnet_depth.safetensors https://huggingface.co/stabilityai/stable-diffusion-3.5-controlnets/resolve/main/sd3.5_large_controlnet_depth.safetensors
