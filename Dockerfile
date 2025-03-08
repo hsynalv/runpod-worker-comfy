@@ -52,10 +52,10 @@ ARG MODEL_TYPE
 WORKDIR /comfyui
 
 # Download checkpoints/vae/LoRA to include in image based on model type
-
+RUN wget --header="Authorization: Bearer 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" -O models/unet/flux1-dev.safetensors https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors
 RUN wget -O models/clip/clip_l.safetensors https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors
 RUN wget -O models/clip/t5xxl_fp8_e4m3fn.safetensors https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors
-
+RUN wget --header="Authorization: Bearer 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" -O models/vae/ae.safetensors https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors
 
 
 # Stage 3: Final image
